@@ -29,7 +29,7 @@ if [[ "$VERSION_ID" == "20.04" ]]; then
 
 chmod -x /etc/update-motd.d/*
 
-SERVERIP="ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'"
+SERVERIP="$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')"
 
 echo "[    actiniumcloud]   _______  ______
 [    actiniumcloud]  |  ___\ \/ / ___|  ___ _ ____   _____ _ __
