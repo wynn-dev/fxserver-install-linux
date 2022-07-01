@@ -12,15 +12,20 @@ if [[ "$VERSION_ID" == "20.04" ]]; then
     kill $(lsof -t -i:40120)
 
     # Install dependencies
-    apt update -y
-    apt install -y wget tar
+    clear
+    echo "A instalar dependências..."
+    apt update -y &> ~/fx_installer.log
+    apt install -y wget tar &> ~/fx_installer.log
+    clear
 
     # Make a directory for the fxServer
+    echo "A instalar FxServer..."
     cd /root
-    mkdir fxServer
+    mkdir fxServer &> ~/fx_installer.log
     cd fxServer
-    wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/5562-25984c7003de26d4a222e897a782bb1f22bebedd/fx.tar.xz
-    tar -xvf fx.tar.xz
+    wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/5562-25984c7003de26d4a222e897a782bb1f22bebedd/fx.tar.xz &> ~/fx_installer.log
+    tar -xvf fx.tar.xz &> ~/fx_installer.log
+    clear
 
     # Run the fxServer
     ./run.sh &
