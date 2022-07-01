@@ -1,4 +1,4 @@
-# fxserver-install-linux
+# [EN] fxserver-install-linux
 
 Single-command fxServer (FiveM server) installer for ActiniumCloud
 
@@ -17,6 +17,29 @@ Single-command fxServer (FiveM server) installer for ActiniumCloud
   <li>Ubuntu 20.04</li>
 </ul>
 
-## Installing
+## Install
+
+`bash <(curl -s https://raw.githubusercontent.com/wynn-dev/fxserver-install-linux/main/install.sh)`
+
+# [PT] fxserver-install-linux
+
+Instalador de fxServer (servidor FiveM) de comando único para ActiniumCloud
+
+## Quero utilizá-lo na minha máquina
+
+### Requisitos de Hardware
+
+<ul>
+  <li>2+ CPU Cores @ 2.4+ Ghz</li>
+  <li>4+ GB RAM</li>
+</ul>
+
+### Requisitos de software
+
+<ul>
+  <li>Ubuntu 20.04</li>
+</ul>
+
+## Instalar
 
 `bash <(curl -s https://raw.githubusercontent.com/wynn-dev/fxserver-install-linux/main/install.sh)`
