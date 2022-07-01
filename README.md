@@ -15,6 +15,7 @@ Single-command fxServer (FiveM server) installer for ActiniumCloud
 
 <ul>
   <li>Ubuntu 20.04</li>
+  <li>Root access</li>
 </ul>
 
 ## Install
@@ -38,6 +39,7 @@ Instalador de fxServer (servidor FiveM) de comando único para ActiniumCloud
 
 <ul>
   <li>Ubuntu 20.04</li>
+  <li>Acesso root</li>
 </ul>
 
 ## Instalar
