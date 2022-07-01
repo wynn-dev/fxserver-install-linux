@@ -1,6 +1,6 @@
 # fxserver-install-linux
 
-Simple fxServer (FiveM server) installer for ActiniumCloud
+Single-command fxServer (FiveM server) installer for ActiniumCloud
 
 ## I want to use it on my machine
 
