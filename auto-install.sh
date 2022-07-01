@@ -39,7 +39,7 @@ echo "[    actiniumcloud]   _______  ______
 [    actiniumcloud]   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [    actiniumcloud]                                        
 [    actiniumcloud]           Endereço do TxAdmin         
-[    actiniumcloud]         http://$SERVERIP:40120/       
+[    actiniumcloud]       http://$SERVERIP:40120/       
 [    actiniumcloud]                                        
 [    actiniumcloud]       O Nosso servidor de Discord:    
 [    actiniumcloud]       https://discord.gg/fmkgRD3vfh   

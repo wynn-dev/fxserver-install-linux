@@ -25,6 +25,30 @@ if [[ "$VERSION_ID" == "20.04" ]]; then
     # Run the fxServer
     ./run.sh &
 
+# Add fxServer info to the MOTD
+
+chmod -x /etc/update-motd.d/*
+
+SERVERIP="ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'"
+
+echo "[    actiniumcloud]   _______  ______
+[    actiniumcloud]  |  ___\ \/ / ___|  ___ _ ____   _____ _ __
+[    actiniumcloud]  | |_   \  /\___ \ / _ \ '__\ \ / / _ \ '__|
+[    actiniumcloud]  |  _|  /  \ ___) |  __/ |   \ V /  __/ |
+[    actiniumcloud]  |_|   /_/\_\____/ \___|_|    \_/ \___|_|
+[    actiniumcloud] -------------------------------- ActiniumCloud ---
+[    actiniumcloud]
+[    actiniumcloud]
+[    actiniumcloud]   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[    actiniumcloud]                                        
+[    actiniumcloud]           Endereço do TxAdmin         
+[    actiniumcloud]       http://$SERVERIP:40120/       
+[    actiniumcloud]                                        
+[    actiniumcloud]       O Nosso servidor de Discord:    
+[    actiniumcloud]       https://discord.gg/fmkgRD3vfh   
+[    actiniumcloud]                                        
+[    actiniumcloud]   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" > /etc/motd
+
 else
 
 # Echo unsupported OS and exit
